@@ -1,0 +1,8 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.metapack.webdriver.WebDriverTest" tests="1" failures="0" errors="0" timestamp="2014-08-18T14:58:26" hostname="mpws00145" time="12.332">
+  <properties/>
+  <testcase name="testWebDriver" classname="com.metapack.webdriver.WebDriverTest" time="12.332"/>
+  <system-out><![CDATA[Setting the FF driver
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
