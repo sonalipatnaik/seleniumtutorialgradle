@@ -12,9 +12,9 @@ import com.metapack.pages.LoginPage;
 
 /**
  * Web Driver Selenium Test with Gradle.
- * 
+ *
  * @author rahulsingh
- * 
+ *
  */
 public class WebDriverTest {
     private static final String URL = "http://dmtstbau/dm";
@@ -36,12 +36,18 @@ public class WebDriverTest {
 
         loginPage.iLogOut();
     }
-    
+
+    /**
+     * After test - shut browser down.
+     */
     @After
     public void shutdownBroswer() {
         driver.quit();
     }
 
+    /**
+     * Set the FF Driver.
+     */
     private void setDriver() {
         DesiredCapabilities capability = null;
         System.out.println("Setting the FF driver");
@@ -54,10 +60,10 @@ public class WebDriverTest {
     }
 
     /**
-     * Sets the FirefoxProfile for the FF WebDriver. Used for the file label download so these settings are critical.
-     * 
-     * @param userDownloadDir
-     *            user download directory
+     * Sets the FirefoxProfile for the FF WebDriver. Used for the file
+     * label download so these settings are critical.
+     *
+     * @param userDownloadDir user download directory
      * @return FirefoxProfile firefoxProfile
      */
     public FirefoxProfile setFirefoxProfile(String userDownloadDir) {

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-/**	
+/**
  * Represents Login page as a Page Object.
  *
  * @author rahulsingh
@@ -13,9 +13,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
  */
 public class LoginPage extends BasePage {
 
-    private static final String LOGIN_BUTTON_ID = "loginButton";
     public static final String USERID_FIELD_ID = "userId";
     public static final String PASSWORD_FIELD_ID = "password";
+    private static final String LOGIN_BUTTON_ID = "loginButton";
 
     /**
      * Login Page constructor.
@@ -32,7 +32,7 @@ public class LoginPage extends BasePage {
     public void iClickOnLoginButton() {
         WebElement element = getElementById(LOGIN_BUTTON_ID);
         element.click();
-        
+
         getWebDriverWait().until(ExpectedConditions.elementToBeClickable(By.cssSelector(QuickSearchPage.SEARCH_BUTTON_CSS_SELECTOR)));
     }
 

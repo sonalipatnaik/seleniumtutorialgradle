@@ -6,17 +6,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
- * Page superclass providing page object functionality to all
- * other Page objects.
+ * Page superclass providing page object functionality to all other Page objects.
  *
  * @author rahulsingh
  *
  */
 public class BasePage {
+
+    private static final String LOG_OUT_LINK = "Log out";
     private WebDriver driver;
     private WebDriverWait wait;
-    
-    private static final String LOG_OUT_LINK = "Log out";
 
     /**
      * Constructor passing in a Web Driver instance.
